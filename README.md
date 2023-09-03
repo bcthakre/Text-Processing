@@ -102,4 +102,20 @@ This guide provides a step-by-step process to integrate the Kaggle API with Pyth
 
 ## Flow Diagram
 
-![Kaggle Integration](https://github.com/bcthakre/Text-Processing/blob/main/images/kaggleIntegration.png)
+```
+mermaid
+
+graph TD
+    A[Start] --> B[Initialize Kaggle API]
+    B --> C{Choose Method}
+    C --> D1[dataset_list]
+    C --> D2[dataset_download_files]
+    C --> D3[competitions_list]
+    C --> D4[competition_submit]
+    C --> D5[competition_leaderboard_view]
+    D1 --> E[Display Datasets]
+    D2 --> F[Download Datasets]
+    D3 --> G[Display Competitions]
+    D4 --> H[Submit Solution]
+    D5 --> I[View Leaderboard]
+```
