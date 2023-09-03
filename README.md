@@ -100,4 +100,4 @@ This guide provides a step-by-step process to integrate the Kaggle API with Pyth
 
 ## Flow Diagram
 
-![Kaggle Integration](/Users/bhupendrasinhthakre/Documents/Python/text-preprocessing/kaggleIntegration.png)
+![Kaggle Integration](./images/kaggleIntegration.png)
