@@ -33,6 +33,8 @@ graph TD
     G --> H
     H --> I
 
+```
+
 ## Let's integrate Kaggle. 
 # How fun it will be to see all the methods we created earlier 
 # to apply on the real life dataset
