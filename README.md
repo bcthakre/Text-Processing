@@ -106,16 +106,32 @@ This guide provides a step-by-step process to integrate the Kaggle API with Pyth
 mermaid
 
 graph TD
-    A[Start] --> B[Initialize Kaggle API]
-    B --> C{Choose Method}
-    C --> D1[dataset_list]
-    C --> D2[dataset_download_files]
-    C --> D3[competitions_list]
-    C --> D4[competition_submit]
-    C --> D5[competition_leaderboard_view]
-    D1 --> E[Display Datasets]
-    D2 --> F[Download Datasets]
-    D3 --> G[Display Competitions]
-    D4 --> H[Submit Solution]
-    D5 --> I[View Leaderboard]
+    A[Start]
+    B[Initialize Kaggle API]
+    C{Choose Method}
+    D1[dataset_list]
+    D2[dataset_download_files]
+    D3[competitions_list]
+    D4[competition_submit]
+    D5[competition_leaderboard_view]
+    E[Display Datasets]
+    F[Download Datasets]
+    G[Display Competitions]
+    H[Submit Solution]
+    I[View Leaderboard]
+
+    A --> B
+    B --> C
+    C --> D1
+    C --> D2
+    C --> D3
+    C --> D4
+    C --> D5
+    D1 --> E
+    D2 --> F
+    D3 --> G
+    D4 --> H
+    D5 --> I
+
+
 ```
