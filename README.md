@@ -102,9 +102,7 @@ This guide provides a step-by-step process to integrate the Kaggle API with Pyth
 
 ## Flow Diagram
 
-```
-mermaid
-
+```mermaid
 graph TD
     A[Start]
     B[Initialize Kaggle API]
