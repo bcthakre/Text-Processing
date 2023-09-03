@@ -33,7 +33,9 @@ api.dataset_download_files('juhibhojani/hotel-reviews',path='.',unzip=True)
 
 # load the dataset
 
-file_name = os.listdir('.')[5] 
+file_name = os.listdir('.')[10] 
 data = pd.read_csv(file_name)
 
 # Replace the NaN values with empty strings
+
+print(data.head())
