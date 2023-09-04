@@ -32,10 +32,16 @@ api.competitions_list()
 api.dataset_download_files('juhibhojani/hotel-reviews',path='.',unzip=True)
 
 # load the dataset
+# Number 10 below may be different for you
+# check the file name in the folder
+
+print(os.listdir('.'))
+
+# read the csv file
 
 file_name = os.listdir('.')[10] 
 data = pd.read_csv(file_name)
 
-# Replace the NaN values with empty strings
+# check the data
 
 print(data.head())
