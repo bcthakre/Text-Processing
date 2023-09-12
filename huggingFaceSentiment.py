@@ -53,7 +53,7 @@ hotel_review['sentiment_score'] = hotel_review['Review_Text'].apply(lambda x: se
 
 # apply the pipeline on the Sentence column
 
-ner_corpus['topic'] = ner_corpus['Review_Text'].apply(lambda x: topic_pipeline(x)[0]['label'])
+ner_corpus['topic'] = ner_corpus['Sentence'].apply(lambda x: topic_pipeline(x)[0])
 
 
 # import libraries
