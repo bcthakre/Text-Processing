@@ -56,6 +56,19 @@ hotel_review['sentiment_score'] = hotel_review['Review_Text'].apply(lambda x: se
 ner_corpus['topic'] = ner_corpus['Sentence'].apply(lambda x: topic_pipeline(x)[0])
 
 
+def get_sentiment(text):
+    result = topic_pipeline(text)[0]
+    label_map = {
+        "LABEL_0": "negative",
+        "LABEL_1": "neutral",
+        "LABEL_2": "positive"
+    }
+    return label_map[result['label']]
+
+ner_corpus['topic_sentiment_cardiffnlp'] = ner_corpus['Sentence'].apply(get_sentiment)
+ner_corpus['topic_sentiment_siebert'] = ner_corpus['Sentence'].apply(lambda x: sentiment_pipeline(x)[0]['label'])
+
+
 # import libraries
 
 from pybtex.database.input import bibtex
